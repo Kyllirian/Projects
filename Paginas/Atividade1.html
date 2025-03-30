@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SomWeb - The Weeknd</title>
+</head>
+
+<body>
+
+    <h1>The Weeknd</h1>
+
+    <div id="artista-info">
+        <!-- Imagem principal do artista -->
+        <img id="imagem-principal" src="../images/theWeekend.jpeg" alt="Imagem do Artista">
+
+        <!-- Logo do artista -->
+        <img id="logo-artista" src="../images/logo.png" alt="Logo do Artista">
+
+        <!-- Introdução sobre o artista -->
+        <p>The Weeknd é um dos artistas mais influentes da música contemporânea. Com uma carreira marcante, suas canções exploram temas de amor, relações complicadas e introspecção. Seu estilo único e sonoridade misturam R&B, pop e música eletrônica, conquistando uma legião de fãs ao redor do mundo.</p>
+
+        <!-- Lista de álbuns preferidos -->
+        <h3>Álbuns Preferidos:</h3>
+        <ol>
+            <li>Starboy - The Weeknd</li>
+            <li>After Hours - The Weeknd</li>
+            <li>Beauty Behind the Madness - The Weeknd</li>
+        </ol>
+
+        <!-- Lista de curiosidades sobre o artista -->
+        <h3>Curiosidades:</h3>
+        <ul>
+            <li>Seu nome verdadeiro é Abel Tesfaye.</li>
+            <li>Ele é conhecido por suas habilidades vocais e falsete inconfundível.</li>
+            <li>Foi nomeado para vários prêmios Grammy e venceu diversos deles.</li>
+        </ul>
+
+        <!-- Link para a música no YouTube -->
+        <p>Escute agora uma das músicas no <a href="https://www.youtube.com/watch?v=OwQW1DorPck" target="_blank">YouTube</a>.</p>
+
+        <!-- Botão "Ouvir Agora" -->
+        <button onclick="window.open('https://www.youtube.com/watch?v=OwQW1DorPck')">Ouvir Agora</button>
+
+        <!-- Trecho da música em destaque -->
+        <blockquote>"I ran out of tears when I was eighteen."</blockquote>
+    </div>
+
+</body>
+
+<style>
+
+#imagem-principal {
+    width: 250px; 
+    height: 250px; 
+    border-radius: 10px;
+    
+}
+    body {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        text-align: center;
+    }
+
+    h1 {
+        color: #2c3e50;
+        font-size: 3em;
+        margin-top: 30px;
+    }
+
+    #artista-info {
+        background-color: #f1c40f;
+        padding: 20px;
+        border-radius: 10px;
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    #logo-artista {
+        width: 100px;
+        margin-top: 10px;
+        border-radius: 50%;
+    }
+
+    p {
+        font-size: 1.2em;
+        line-height: 1.6em;
+        margin: 20px 0;
+    }
+
+    ol {
+        text-align: left;
+        margin: 20px auto;
+        max-width: 400px;
+    }
+
+    ul {
+        text-align: left;
+        margin: 20px auto;
+        max-width: 400px;
+    }
+
+    a {
+        color: #2980b9;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+
+    a:hover {
+        color: #3498db;
+    }
+
+    button {
+        background-color: #27ae60;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+    }
+
+    button:hover {
+        background-color: #2ecc71;
+    }
+
+    footer {
+        background-color: #34495e;
+        color: white;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    blockquote {
+        background-color: #ecf0f1;
+        padding: 15px;
+        border-left: 5px solid #2980b9;
+        font-style: italic;
+        margin: 30px auto;
+        max-width: 500px;
+    }
+</style>
+</html>

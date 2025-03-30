@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Capas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        #conteiner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .album {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            width: 200px;
+            margin-bottom: 20px; 
+        }
+        .album img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .album:hover {
+            transform: translateY(-5px);
+        }
+        .album p {
+            margin-top: 10px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .album:hover p {
+            color: #ff5733;
+        }
+    </style>
+</head>
+<body>
+    <h1>Galeria de Capas de Álbuns</h1>
+    <div id="conteiner">
+        <div class="album">
+            <img src="../images/Album1.png" alt="Physical Graffiti">
+            <p>Physical Graffiti, Led Zeppelin</p>
+        </div>
+        <div class="album">
+            <img src="../images/Album2.jpeg" alt="The Dark Side of The Moon">
+            <p>The Dark Side of The Moon, Pink Floyd</p>
+        </div>
+        <div class="album">
+            <img src="../images/Album3.jpeg" alt="The Creator">
+            <p>The Creator, Tyler</p>
+        </div>
+        <div class="album">
+            <img src="../images/Album4.jpeg" alt="Alucinações">
+            <p>Alucinações, DJ Borboleta</p>
+        </div>
+        <div class="album">
+            <img src="../images/Album5.jpeg" alt="Art Record Covers">
+            <p>Art Record Covers, Taschen</p>
+        </div>
+        <div class="album">
+            <img src="../images/Album6.png" alt="The Velvet Underground & Nico">
+            <p>The Velvet Underground & Nico</p>
+        </div>
+        <div class="album">
+            <img src="../images/Album7.jpeg" alt="Disconnected">
+            <p>Disconnected, Vinicio</p>
+        </div>
+        <div class="album">
+            <img src="../images/Album8.jpeg" alt="Ride">
+            <p>Ride, Myron Micael</p>
+        </div>
+        <div class="album">
+            <img src="../images/Album10.jpg" alt="Black Ice">
+            <p>Black Ice, AC/DC</p>
+        </div>
+        <div class="album">
+            <img src="../images/Album9.png" alt="Sour">
+            <p>Sour, Olivia Rodrigo</p>
+        </div>
+    </div>
+</body>
+</html>

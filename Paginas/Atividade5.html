@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Shows - SomWeb</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+
+        #conteiner {
+            display: grid;
+            grid-template-columns: 120px 150px 200px 200px;
+            gap: 5px;
+            max-width: 700px;
+            width: 100%;
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .grid-heading {
+            background-color: #2a1435;
+            color: white;
+            font-weight: bold;
+            padding: 12px;
+            border-radius: 5px;
+        }
+
+        .grid-item {
+            padding: 12px;
+            border-radius: 5px;
+        }
+
+        .grid-item:nth-child(even) {
+            background-color: #327583;
+        }
+
+     
+        .grid-item:hover {
+            background-color: #90e0ef;
+            transition: 0.3s ease;
+        }
+
+        @media (max-width: 600px) {
+            #conteiner {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .grid-heading, .grid-item {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="conteiner">
+        <div class="grid-heading">Data</div>
+        <div class="grid-heading">Cidade</div>
+        <div class="grid-heading">Local</div>
+        <div class="grid-heading">Artista</div>
+
+        <div class="grid-item">29/03/2025</div>
+        <div class="grid-item">Joinville</div>
+        <div class="grid-item">Joinville Square Garden</div>
+        <div class="grid-item">Anitta</div>
+
+        <div class="grid-item">15/06/2025</div>
+        <div class="grid-item">Florianópolis</div>
+        <div class="grid-item">Stage Music Park</div>
+        <div class="grid-item">Projota</div>
+
+        <div class="grid-item">09/07/2025</div>
+        <div class="grid-item">Joinville</div>
+        <div class="grid-item">The Concept House</div>
+        <div class="grid-item">Legião Urbana</div>
+
+        <div class="grid-item">05/09/2025</div>
+        <div class="grid-item">Joinville</div>
+        <div class="grid-item">Joinville Square Garden</div>
+        <div class="grid-item">Alok</div>
+
+        <div class="grid-item">17/11/2025</div>
+        <div class="grid-item">Curitiba</div>
+        <div class="grid-item">Teatro Lala Schneider</div>
+        <div class="grid-item">Bruno Martini</div>
+    </div>
+</body>
+
+</html>
